@@ -1,0 +1,306 @@
+/* Importation polices */
+
+@font-face {
+    font-family: "geosansLight" ;
+    src: url("font/GeosansLight.ttf");
+}
+
+/* Général */
+
+*{
+    font-family: "geosansLight", sans-serif;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.fond-bleu{
+    background-color: #8cd8d0;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+
+main .zone70 h2, footer .zone70 h2{
+    font-size: 22px;
+    text-transform: uppercase;
+    margin: 0 20px 20px 20px;
+    padding: 10px 0 10px 20px;
+    border-bottom: #8cd8d0 solid 1px;
+}
+
+main h3{
+    text-decoration: underline black;
+    text-underline-position: under;
+}
+
+/* Header */
+
+body header hgroup{
+    margin: auto;
+    padding: 0 0 0 20px;
+}
+
+body header h2{
+    font-size: 40px;
+    padding: 10px 0;
+}
+
+body header h1 {
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 900;
+    padding-bottom: 30px;
+}
+
+body header h1 #bleu{
+    color: #8cd8d0;
+}
+
+
+header section{
+    text-align: center;
+    padding: 20px;
+}
+
+header section img{
+    width: 70%;
+    height: auto;
+    border-radius: 50%;
+    margin: 0 15%;
+}
+
+/* Main */
+
+main .fond-gris div{
+    padding: 15px 20px;
+}
+
+main .fond-gris div a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: left;
+    padding: 5px 0;
+}
+
+main .fond-gris div p{
+    padding: 5px 0;
+}
+
+main .zone70, footer .zone70{
+    padding-bottom: 20px;
+}
+
+main div article p{
+    padding: 5px 0 3px 0;
+}
+
+
+/* Footer */
+
+footer div article{
+    display: inline-block;
+    width: 33%;
+}
+
+
+footer div p{
+    display: inline-block;
+}
+
+#loisirs{
+    text-align: center;
+}
+
+.cercles{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: solid 3px #8cd8d0; 
+    background-color: rgb(34, 31, 31);
+    margin: 25px 15px;
+    vertical-align: middle;
+}
+
+footer #loisirs p{
+    padding: 6px;
+}
+
+footer h3{
+    font-weight: 900;
+    text-align: center;
+}
+
+footer{
+    flex-direction: row;
+}
+
+/* Flex */
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexdates{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.zone30{
+    width: 30%;
+    background-color: rgb(34, 31, 31);
+    color: white;
+}
+
+.zone70{
+    width: 70%;
+    padding-left: 20px;
+}
+
+.zone20{
+    width: 20%;
+    padding: 4px 10px;
+}
+
+.zone80{
+    width: 80%;
+    padding-bottom: 10px;
+}
+
+/* Icones */
+
+.fa-solid{
+    color: #8cd8d0;
+    padding: 0 8px 0 0;
+}
+
+.fa-circle{
+    font-size: 50%;
+}
+
+#icone-rouge{
+    color: #dc143c;
+    padding: 0 8px 0 0;
+}
+
+#icone-orange{
+    color: #dc8514;
+    padding: 0 8px 0 0;
+}
+
+#icone-violette{
+    color: #c814dc;
+    padding: 0 8px 0 0;
+}
+
+/* Responsive */
+
+@media (max-width: 1024px){
+    .zone30, .zone70, .zone20, .zone80{ 
+        width: 100%;
+    }
+    body header hgroup{
+        order: -1;
+        text-align: center;
+        padding: 50px 0 15px 0;
+    }
+    header section img{
+        width: 40%;
+        margin: 0 30%;
+    }
+    body header h1{
+        padding: 0;
+    }
+    footer{
+        flex-direction: column-reverse;
+    }
+    header section img{
+        width: 30%;
+        margin: 0 35%;
+    }
+    main .fond-gris div a{
+        text-align: center;
+    }
+    main .zone70 h2, footer .zone70 h2{
+        font-size: 22px;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .zone70{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .zone20{
+        padding:30px 0 20px 0;
+    }
+    main .fond-gris div{
+        padding: 15px 40px;
+    }
+    main h3{
+        padding-bottom: 10px;
+    }
+    footer div article{
+        display: block;
+        width: 100%;
+        padding: 0 40px;
+        text-align: center;
+        list-style-position: inside;
+    }
+    footer h3{
+        padding-left: 40px;
+    } 
+
+}
+
+ @media (max-width: 800px){
+    
+    body header h1{
+        font-size: 50px;
+    }
+    body header h2{
+        font-size: 35px;
+    }
+    main .zone70 h2, footer .zone70 h2,.fond-bleu{
+        font-size: 22px;
+    }  
+    
+}
+
+@media (max-width: 500px){
+    body header h1, body header h1 #bleu{
+        font-size: 35px;
+    }
+    body header h2{
+        font-size: 25px;
+    }
+    main h3, footer h3{
+        font-size: 16px;
+    }
+    main .zone70 h2, footer .zone70 h2, .fond-bleu{
+        font-size: 18px;
+    }
+    *{
+        font-size: 14px;
+    }
+    .zone70{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    main .fond-gris div{
+        padding: 15px 20px;
+    }
+    footer div article{
+        padding: 0 20px;
+    }
+    main h3{
+        padding-bottom: 5px;
+    }
+    .zone20{
+        padding:15px 0 10px 0;
+    }
+
+} 
